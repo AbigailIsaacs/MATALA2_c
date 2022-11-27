@@ -2,7 +2,9 @@
 #include "my_mat.h"
 #define LENGTH 10
 
-void getNumbers(int A[][LENGTH]){
+void getNumbers(int b[][LENGTH]){
+	int (*A)[LENGTH];
+	A = b;
 	for(int i=0;i<LENGTH;i++){
 		for(int j=0;j<LENGTH;j++){
 			scanf(" %d",&A[i][j]);
