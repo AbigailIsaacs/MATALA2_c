@@ -3,7 +3,7 @@
 #define LENGTH 10
 int main (){
 	int A[LENGTH][LENGTH];
-	char s ;
+	char s = 'H';
 	int i ,j ;
 	while(s != 'D'){
 		scanf(" %c",&s);
