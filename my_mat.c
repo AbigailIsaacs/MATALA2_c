@@ -2,9 +2,9 @@
 #include "my_mat.h"
 #define LENGTH 10
 
-void getNumbers(int b[][LENGTH]){
-	int (*A)[LENGTH];
-	A = b;
+void getNumbers(int A[LENGTH][LENGTH]){
+
+	
 	for(int i=0;i<LENGTH;i++){
 		for(int j=0;j<LENGTH;j++){
 			scanf(" %d",&A[i][j]);
@@ -29,7 +29,7 @@ void getNumbers(int b[][LENGTH]){
 		}	
 	}	
 }
-void isPath(int A [][LENGTH],int i,int j){
+void isPath(int A [LENGTH][LENGTH],int i,int j){
 	if (A[i][j]!=0){
 		printf("True\n");
 	}
@@ -37,7 +37,7 @@ void isPath(int A [][LENGTH],int i,int j){
 		printf("False\n");
 	}
 }
-void shortest(int A [][LENGTH],int i,int j){
+void shortest(int A [LENGTH][LENGTH],int i,int j){
 	if(A[i][j] == 0){
 		printf("-1\n");
 	}
